@@ -4,8 +4,9 @@ Repo created to reproduce bug https://github.com/github/linguist/issues/2377
 
 Steps I've made
 =====
-1. Installed linguist.
+1. Installed linguist (ubuntu 14.04).
    ```
+   $ sudo gem install github-linguist
    ...
    
    Successfully installed github-linguist-4.5.4
