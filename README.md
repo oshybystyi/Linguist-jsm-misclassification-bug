@@ -19,4 +19,10 @@ Steps I've made
    project = Linguist::Repository.new(repo, repo.head.target_id)
    project.language       #=> "Java"
    ```
-   The output from last command should be "Javascript"
+   The output from last command should be "Javascript".
+
+3. After adding .gitattributes with content:
+   ```
+   *.jsm linguist-language=Javascript
+   ```
+   `project.language` returns 'Javascript' (did not commit that in repo).
