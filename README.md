@@ -2,8 +2,10 @@
 # Linguist jsm misclassification bug
 Repo created to reproduce bug https://github.com/github/linguist/issues/2377
 
-Steps I've made
-=====
+The ui.jsm is taken from [here](https://github.com/Exclumice/FireX-Pixel-Perfect/blob/f05270b23dea663c14943fc1f3524e8eeb0dfd1d/content/ui.jsm)
+
+### Steps I've made
+
 1. Installed linguist (ubuntu 14.04).
    ```
    $ sudo gem install github-linguist
@@ -29,3 +31,7 @@ Steps I've made
    *.jsm linguist-language=Javascript
    ```
    `project.language` returns 'Javascript' (did not commit that in repo).
+
+### Resolved (solution)
+
+Wrong modeline was set for this file. So it is better to change `Mode: Java` on `Mode: Javascript` (https://github.com/github/linguist/issues/2377#issuecomment-98330724).
