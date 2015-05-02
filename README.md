@@ -7,7 +7,9 @@ Steps I've made
 1. Installed linguist.
    ```
    ...
+   
    Successfully installed github-linguist-4.5.4
+   
    ...
    ```
 2. Cd to repo folder and run next commands in irb1.9.1:
